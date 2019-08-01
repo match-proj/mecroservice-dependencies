@@ -33,6 +33,8 @@
         <lang.version>3.8.1</lang.version>
         <mysql.version>5.1.47</mysql.version>
         <mybatis.version>2.0.1</mybatis.version>
+        <swagger.version>2.6.0</swagger.version>
+        <slf4j-api.version>1.7.25</slf4j-api.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +72,21 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
