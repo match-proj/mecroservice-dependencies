@@ -29,12 +29,14 @@
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
         <!--Lombok-->
         <lombok.version>1.16.20</lombok.version>
+        <feign-httpclient>9.7.0</feign-httpclient>
         <guava.version>28.0-jre</guava.version>
         <lang.version>3.8.1</lang.version>
         <mysql.version>5.1.47</mysql.version>
         <mybatis.version>2.0.1</mybatis.version>
         <swagger.version>2.6.0</swagger.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
+        <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
     </properties>
 
     <dependencyManagement>
@@ -69,6 +71,11 @@
                 <version>${mybatis.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-httpclient</artifactId>
+                <version>${feign-httpclient}</version>
+            </dependency>
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
@@ -88,8 +95,31 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j-api.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+    </distributionManagement>
+
+    <developers>
+        <developer>
+            <id>match</id>
+            <email>jaguar_zc@sina.com</email>
+            <name>springcloud-microservice-dependencies</name>
+            <project>match-proj</project>
+        </developer>
+    </developers>
 
     <build>
         <pluginManagement>
