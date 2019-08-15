@@ -37,6 +37,7 @@
         <swagger.version>2.6.0</swagger.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
         <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
+        <event-stream.version>1.0.0</event-stream.version>
     </properties>
 
     <dependencyManagement>
@@ -76,6 +77,23 @@
                 <version>${feign-httpclient}</version>
             </dependency>
             <dependency>
+                <groupId>com.github.middleware.plugin</groupId>
+                <artifactId>event-stream-springboot-starter</artifactId>
+                <version>${event-stream.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.middleware.plugin</groupId>
+                <artifactId>event-stream-redis</artifactId>
+                <version>${event-stream.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.middleware</groupId>
+                <artifactId>event-stream</artifactId>
+                <version>${event-stream.version}</version>
+            </dependency>
+
+
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
@@ -112,12 +130,12 @@
         </repository>
     </distributionManagement>
 
+
     <developers>
         <developer>
             <id>match</id>
             <email>jaguar_zc@sina.com</email>
             <name>springcloud-microservice-dependencies</name>
-            <project>match-proj</project>
         </developer>
     </developers>
 
