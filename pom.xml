@@ -38,6 +38,7 @@
         <slf4j-api.version>1.7.25</slf4j-api.version>
         <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
         <event-stream.version>1.0.0</event-stream.version>
+        <swagger-annotations.version>1.5.14</swagger-annotations.version>
     </properties>
 
     <dependencyManagement>
@@ -117,6 +118,11 @@
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
