@@ -32,7 +32,7 @@
         <feign-httpclient>9.7.0</feign-httpclient>
         <guava.version>28.0-jre</guava.version>
         <lang.version>3.8.1</lang.version>
-        <mysql.version>5.1.47</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <mybatis.version>2.0.1</mybatis.version>
         <swagger.version>2.6.0</swagger.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
