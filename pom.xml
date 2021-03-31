@@ -30,7 +30,7 @@
         <!--Lombok-->
         <lombok.version>1.16.20</lombok.version>
         <feign-httpclient>9.7.0</feign-httpclient>
-        <guava.version>28.0-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <lang.version>3.8.1</lang.version>
         <mysql.version>5.1.47</mysql.version>
         <mybatis.version>2.0.1</mybatis.version>
