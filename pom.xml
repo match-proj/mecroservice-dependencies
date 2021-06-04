@@ -36,7 +36,7 @@
         <mybatis.version>2.0.1</mybatis.version>
         <swagger.version>2.6.0</swagger.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
-        <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
+        <hibernate-validator.version>6.0.20.Final</hibernate-validator.version>
         <event-stream.version>1.0.0</event-stream.version>
         <swagger-annotations.version>1.5.14</swagger-annotations.version>
     </properties>
